@@ -1,30 +1,14 @@
 import os
-import logging
 import requests
 import threading
 import streamlit as st
 import uvicorn
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from pydantic import BaseModel
-from fastapi.middleware.cors import CORSMiddleware
 from utils import save_audio_temp, delete_temp_file, generate_transcription, generate_qa
-
-
-# Set up logging
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
 
 # Initialize FastAPI app
 app = FastAPI()
-
-# CORS Middleware to allow frontend to call API
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Define API request model
 class QuestionRequest(BaseModel):
