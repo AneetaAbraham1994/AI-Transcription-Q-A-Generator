@@ -1,4 +1,4 @@
-# AI Transcription & Q&A Generator
+# AI Transcription - Q&A Generator
 
 ## Overview
 The **AI Transcription & Q-A Generator** is an AI-powered application that transcribes audio input and then generates a structured Q&A session based on the transcription. It uses **FastAPI** as the backend service and integrates a **Streamlit** user interface for interactive use. Additionally, the project includes Jupyter notebooks for experimental exploration with the **Whisper transcription API** and the **Gemini Q&A generation API**.
