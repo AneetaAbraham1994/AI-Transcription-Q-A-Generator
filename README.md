@@ -111,11 +111,5 @@ The project includes two Jupyter notebooks for experimentation, located in the *
 
 ---
 
-## 📝 License
-(Include license information here if applicable.)
 
----
-
-## 📧 Contact
-For questions or support, please contact **Aneeta**.
 
