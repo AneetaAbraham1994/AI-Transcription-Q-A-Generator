@@ -46,7 +46,7 @@ Replace the placeholders with your actual API keys.
 ### **Integrated FastAPI & Streamlit App**
 To run the application (which starts both the FastAPI backend and the Streamlit UI), execute:
 ```bash
-poetry run streamlit run src/main.py
+streamlit run main.py
 ```
 - **Streamlit UI** will launch on **[http://localhost:8501](http://localhost:8501)**.
 - **FastAPI backend** will be available at **[http://127.0.0.1:8000](http://127.0.0.1:8000)**.
@@ -75,7 +75,7 @@ This documentation outlines the available endpoints and how to interact with the
 }
 ```
 
-#### 2️⃣ **POST /ask-question/**
+#### 2️⃣ **POST /generate_question/**
 - **Description:** Generates a structured Q&A session from the provided transcription.
 - **Request:**
 ```json
